@@ -1,0 +1,66 @@
+/*
+"Selectors" are basically Java if statements
+    selector {
+    properties
+  }
+  */
+/* px, em (multiply font size), pt, cm, mm, percentages are all units */
+/* No units if using 0 */
+body {
+  font-size: 14px;
+  color: navy;
+  margin: 1in;
+  margin-top: 1in;
+}
+h1 {
+  color: red;
+  margin-left: -70px;
+  text-transform: capitalize;
+  border: 5px solid orange;
+  background: orange;
+  padding: 1px;
+
+}
+/* Order of spacing (out to in): Margin, border, padding, then the element in question */
+h2 {
+  font-size: 1.5em;
+  background: #ccc;
+  margin: 20px;
+  padding: 20px;
+  border-style: dashed;
+  border-width: 3px;
+  border-left-width: 10px;
+  border-right-width: 10px;
+  border-color: red;
+  margin-left: -50px;
+}
+th {
+  border: 1px solid black;
+}
+table{
+  border: 1px solid black;
+}
+
+ /* .exampletitle {
+  font-size: 1.5em;
+  background: #ccc;
+  margin: 20px;
+  padding: 40px;
+  border-style: dashed;
+  border-width: 3px;
+  border-left-width: 10px;
+  border-right-width: 10px;
+  border-color: red;
+}
+*/
+#pp{
+  padding-left: 10px;
+}
+pre{
+  padding: 7px;
+  color: red;
+  background-color: #f5f2f0;
+}
+img{
+ width: 50%;
+}
