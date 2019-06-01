@@ -144,13 +144,52 @@
 <h2>Math, Ifs/If-elses, while/for loops</h2>
 <p>Exactly like Java</p>
 <h2>Getting a DOM (Document Object Model) element</h2>
- <pre>
-<code>document.getElementById</code>
-<code>document.getElementsByTagName</code>
-<code>document.getElementsByClassName</code>
+<p>These all</p>
+<pre>
+<code>document.getElementById()</code>
+<code>document.getElementsByTagName()</code>
+<code>document.getElementsByClassName()</code>
 </pre>
 <p>You can also get an element by CSS selector</p>
-<code>document.querySelector</code>
-<code>document.querySelectorAll</code>
+<pre>
+<code>document.querySelector()</code>
+<code>document.querySelectorAll()</code>
+</pre>
+<h2>Display methods</h2>
+<h3>Changing an element</h3>
+<pre>
+<code>document.getElementById("demo").innerHTML = 5 + 5;</code>
+</pre>
+<p id="demo"></p>
+<script src="/Volumes/Macintosh HD 2/ammarkhan/Documents/GitHub/Beginner-HTML/script.js"></script>
+<h3>Changing output</h3>
+<pre>
+<code>document.write(10+10)</code>
+</pre>
+<p>
+<strong>Note:</strong>
+Should only be used for testing. Using document.write() after the page has loaded (such as a button) will delete all HTML on the page
+</p>
+<script>
+document.write(10+10)
+</script>
+<h3>Alerting</h3>
+<pre>
+<code>window.alert(10 * 10)</code>
+</pre>
+<script>
+window.alert("Alerting example: " + 10 * 10)
+</script>
+<h3>Writing into browser</h3>
+<p>
+<strong>Note:</strong>
+Look at console to see result 
+</p>
+<pre>
+<code>console.log()</code>
+</pre>
+<script>
+console.log(9*2);
+</script>
 </body>
 </html>
