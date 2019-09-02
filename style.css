@@ -14,16 +14,18 @@ body {
 }
 h1 {
   color: red;
-  margin-left: -70px;
   text-transform: capitalize;
+  text-align:center;
   border: 5px solid orange;
   background: orange;
   padding: 1px;
+  font-size: 20px;
 
 }
 /* Order of spacing (out to in): Margin, border, padding, then the element in question */
 h2 {
   font-size: 1.5em;
+  text-align:center;
   background: #ccc;
   margin: 20px;
   padding: 20px;
@@ -32,7 +34,7 @@ h2 {
   border-left-width: 10px;
   border-right-width: 10px;
   border-color: red;
-  margin-left: -50px;
+  /*margin-left: -50px;*/
 }
 th {
   border: 1px solid black;
@@ -41,18 +43,6 @@ table{
   border: 1px solid black;
 }
 
- /* .exampletitle {
-  font-size: 1.5em;
-  background: #ccc;
-  margin: 20px;
-  padding: 40px;
-  border-style: dashed;
-  border-width: 3px;
-  border-left-width: 10px;
-  border-right-width: 10px;
-  border-color: red;
-}
-*/
 #pp{
   padding-left: 10px;
 }
@@ -64,3 +54,8 @@ pre{
 img{
  width: 50%;
 }
+
+.formExamples{
+		
+	}
+

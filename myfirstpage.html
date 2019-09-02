@@ -3,12 +3,13 @@
 <html>
 
 <head>
-  <!-- <""> are called tags, basically your options for what you want to do -->
-  <!-- Use equals signs to give peripherals -->
+<!-- <""> are called tags, basically your options for what you want to do -->
+<!-- Use equals signs to give peripherals -->
 
-  <title>My first web page</title>
-  <!-- links to css style file -->
-  <link rel="stylesheet" href="/Volumes/Macintosh HD 2/ammarkhan/Documents/GitHub/Beginner-HTML/style.css">
+<title>My first web page</title>
+<!-- links to css style file -->
+<link rel="stylesheet"
+	href="/Volumes/Macintosh HD 2/ammarkhan/git/Beginner-HTML/style.css">
 <!-- Makes all p's (paragraphs) red and all a's (links) blue, called internal styling
   <style>
     p {
@@ -21,175 +22,239 @@
  -->
 </head>
 <body>
-  <h1>My first web page</h1>
-  <h2>What this is?</h2>
-  <p>A simple page put together using HTML</p>
-  <h2>Why this is?</h2>
-  <p>To learn <abbr title="HyperText Markup Language">HTML</abbr></p>
-  <!-- Example of inline styling>
-  <p style="color: red">To learn HTML</p>
+	<h1>My first web page</h1>
+	<h2>What this is?</h2>
+	<p>A simple page put together using HTML</p>
+	<h2>Why this is?</h2>
+	<p>
+		To learn <abbr title="HyperText Markup Language">HTML</abbr>
+	</p>
+
+	<h2>Where to find the tutorial</h2>
+	<p>
+		<a href="http://www.htmldog.com">HTML Dog</a>
+	</p>
+	
+	
+	
+	<hr>
+	
+	
+	
+	<h2>This is an image using the "img" tag</h2>
+	<img src="/Volumes/Macintosh HD 2/ammarkhan/Desktop/IMG_4640.jpeg"
+		alt="MLK">
+	<p>
+		<strong>Note:</strong> The way I bolded the first word was with the
+		"strong" tag
+	</p>
+	
+	
+	
+	<hr>
+	
+	
+	
+	<h2>Form and it's normal tags</h2>
+	<h3>Must put all of these under a form tag</h3>
+	<form action="index.php" method="post">
+		<h2>Input with type "text" or just input tag (can have value for initial text)</h2>
+		<input type="text" value="">
+		<h2>Input with type "password" (can have value for initial text)</h2>
+		<input type="password">
+		<h2>Input with type checkbox and radio (can write "checked" after
+			to make it initially checked)</h2>
+		<input type="checkbox" checked name="" value=""> <input
+			type="radio" name="" value="">
+		<h2>Select</h2>
+		<select>
+			<option>Option 1</option>
+			<option>Option 2</option>
+		</select>
+		<h2>Input with type "submit" (can have value for button text)</h2>
+		<input type="submit" value="Submit"> (Will take all input to
+		php file [processing])
+	</form>
+	
+	
+		
+	<hr>
+	
+	
+	
+	<h2>Other cool tags</h2>
+	<h3 class="exampletitle">Textarea</h3>
+	<textarea rows="5" cols="20">A big load of text</textarea>
+
+	<h3>Table</h3>
+	<table>
+		<tr>
+			<th>Ice Cream</th>
+			<th>Cost</th>
+		</tr>
+		<tr>
+			<td>Row 2, cell 1</td>
+			<td>Row 2, cell 2</td>
+		</tr>
+		<tr>
+			<td>Row 3, cell 1</td>
+			<td>Row 3, cell 2</td>
+		</tr>
+		<tr>
+			<td>Row 4, cell 1</td>
+			<td>Row 4, cell 2</td>
+		</tr>
+	</table>
+	<h3>Unordered and Ordered list</h3>
+	<h4>Unordered</h4>
+	<ul>
+		<li>Milk</li>
+		<li>Eggs</li>
+
+	</ul>
+	<h4>Ordered</h4>
+	<ol>
+		<li>0123-456-7890</li>
+		<li>author_dude@noplaceinteresting.com</li>
+		<li>http://www.noplaceinteresting.com/contactme/</li>
+	</ol>
+	<h3>Description List</h3>
+	<dl>
+		<dt>Definition Term</dt>
+		<dd>Description</dd>
+		<dt>HTML</dt>
+		<dd>Abbreviation for HyperText Markup Language - a language used
+			to make web pages.</dd>
+
+		<dt>Dog</dt>
+		<dd>Any carnivorous animal belonging to the family Canidae.</dd>
+		<dd>The domesticated sub-species of the family Canidae, Canis
+			lupus familiaris.</dd>
+
+		<dt>Moo juice</dt>
+		<dt>Milk</dt>
+		<dd>A white liquid produced by cows and used for human
+			consumption.</dd>
+	</dl>
+	<p>
+		I have decided to
+		<del>decrease</del>
+		<ins cite="http://www.icecreamforall.com/changeofpolicy/">increase</ins>
+		the amount of free ice cream that the State will provide for its
+		citizens.
+	</p>
+	<h1>YOU CAN AND SHOULD PUT NAMES (for processing), ID's (specific
+		names for CSS), and classes (a type for many for CSS) ON ALL OF THE
+		ABOVE FOR PROCESSING</h1>
+		
+		
+		
+		<hr>
+		
+		
+		
+	<h1>CSS</h1>
+		<!-- Example of inline styling>
+  <p style="color: red">Text</p>
 -->
-  <h2>Where to find the tutorial</h2>
-  <p>
-    <a href="http://www.htmldog.com">HTML Dog</a>
-  </p>
-  <h2>This is an image using the "img" tag</h2>
-  <img src="/Volumes/Macintosh HD 2/ammarkhan/Desktop/IMG_4640.jpeg" alt="MLK">
-  <p><strong>Note:</strong> The way I bolded the first word was with the "strong" tag</p>
-<h2>Form and it's normal tags</h2>
-<h3>Must put all of these under a form tag</h3>
-  <form action="index.php" method="post">
-    <h2>Input with type "text" or just input tag (can have value for initial text)</h2>
-    <input type="text" value="">
-    <h2>Input with type "password" (can have value for initial text)</h2>
-    <input type="password">
-    <h2>Input with type checkbox and radio (can write "checked" after to make it initially checked)</h2>
-    <input type="checkbox" checked name="" value="">
-    <input type="radio" name="" value="">
-    <h2>Select</h2>
-      <select>
-        <option>Option 1</option>
-        <option>Option 2</option>
-      </select>
-      <h2>Input with type "submit" (can have value for button text)</h2>
-      <input type="submit" value="Submit"> (Will take all input to php file [processing])
-  </form>
-<h2>Other cool tags</h2>
-<h3 class="exampletitle">Textarea</h3>
-  <textarea rows="5" cols="20">A big load of text</textarea>
-
-  <h3>Table</h3>
-  <table>
-    <tr>
-        <th>Ice Cream</th>
-        <th>Cost</th>
-    </tr>
-    <tr>
-        <td>Row 2, cell 1</td>
-        <td>Row 2, cell 2</td>
-    </tr>
-    <tr>
-        <td>Row 3, cell 1</td>
-        <td>Row 3, cell 2</td>
-    </tr>
-    <tr>
-        <td>Row 4, cell 1</td>
-        <td>Row 4, cell 2</td>
-    </tr>
-</table>
-<h3>Unordered and Ordered list</h3>
-<h4>Unordered</h4>
-<ul>
-  <li>Milk</li>
-  <li>Eggs</li>
-
-</ul>
-<h4>Ordered</h4>
-<ol>
-  <li>0123-456-7890</li>
-  <li>author_dude@noplaceinteresting.com</li>
-  <li>http://www.noplaceinteresting.com/contactme/</li>
-</ol>
-<h3>Description List</h3>
-<dl>
-    <dt>Definition Term</dt>
-    <dd>Description</dd>
-    <dt>HTML</dt>
-    <dd>Abbreviation for HyperText Markup Language - a language used to make web pages.</dd>
-
-    <dt>Dog</dt>
-    <dd>Any carnivorous animal belonging to the family Canidae.</dd>
-    <dd>The domesticated sub-species of the family Canidae, Canis lupus familiaris.</dd>
-
-    <dt>Moo juice</dt>
-    <dt>Milk</dt>
-    <dd>A white liquid produced by cows and used for human consumption.</dd>
-</dl>
-<p>I have decided to <del datetime="2013-01-26">decrease</del> <ins cite="http://www.icecreamforall.com/changeofpolicy/">increase</ins> the amount of free ice cream that the State will provide for its citizens.</p>
-<h1>YOU CAN AND SHOULD PUT NAMES (for processing), ID's (specific names for CSS), and classes (a type for many for CSS) ON ALL OF THE ABOVE FOR PROCESSING</h1>
-<h1>CSS</h1>
-<h2>How do you use CSS?</h2>
-<section id="Usage">
-<h3>Selectors</h3>
-<p>"Selectors" are basically Java if statements</p>
-<pre>
+	<h2>How do you use CSS?</h2>
+	<section id="Usage">
+		<h3>Selectors</h3>
+		<p>"Selectors" are basically Java if statements</p>
+		<pre>
   selector {
     properties
   }
 </pre>
-<p>For example, if I wanted all body text to be blue, I would write</p>
-<pre>
+		<p>For example, if I wanted all body text to be blue, I would
+			write</p>
+		<pre>
   body{
    color: blue;
   }
  </pre>
- <h3>Units</h3>
-<ul>
-  <li>px, em (multiply font size), pt, cm, mm, percentages are all units</li>
-  <li>No need for units if using 0</li>
-</ul>
-<h2>Examples</h2>
-<img src="/Volumes/Macintosh HD 2/ammarkhan/Desktop/weightStyle.gif" alt="">
-<img src="/Volumes/Macintosh HD 2/ammarkhan/Desktop/Screen Shot 2019-05-25 at 2.34.27 PM.png" alt="">
-</section>
-<h1>JS</h1>
-<!-- Internal Scripting -->
-<script>
- alert("I sent this message with a <script> tag! This is an example of internal scripting!")
-</script>
-<h2>Prompting</h2>
-<img src="/Volumes/Macintosh HD 2/ammarkhan/Desktop/Screen Shot 2019-05-26 at 1.01.40 PM.png" alt="">
-<h2>Variables</h2>
-<img src="/Volumes/Macintosh HD 2/ammarkhan/Desktop/Screen Shot 2019-05-26 at 1.07.04 PM.png" alt="">
-<h2>Math, Ifs/If-elses, while/for loops</h2>
-<p>Exactly like Java</p>
-<h2>Getting a DOM (Document Object Model) element</h2>
-<p>These all</p>
-<pre>
+		<h3>Units</h3>
+		<ul>
+			<li>px, em (multiply font size), pt, cm, mm, percentages are all
+				units</li>
+			<li>No need for units if using 0</li>
+		</ul>
+		<h2>Examples</h2>
+		<img src="/Volumes/Macintosh HD 2/ammarkhan/Desktop/weightStyle.gif"
+			alt=""> <img
+			src="/Volumes/Macintosh HD 2/ammarkhan/Desktop/Screen Shot 2019-05-25 at 2.34.27 PM.png"
+			alt="">
+	</section>
+	
+	
+	
+	<hr>
+	
+	
+	
+	<h1>JavaScript</h1>
+	<!-- Internal Scripting -->
+	<script>
+		alert("I sent this message with a <script> tag! This is an example of internal scripting!")
+	</script>
+	<h2>Prompting</h2>
+	<img
+		src="/Volumes/Macintosh HD 2/ammarkhan/Desktop/Screen Shot 2019-05-26 at 1.01.40 PM.png"
+		alt="">
+	<h2>Variables</h2>
+	<img
+		src="/Volumes/Macintosh HD 2/ammarkhan/Desktop/Screen Shot 2019-05-26 at 1.07.04 PM.png"
+		alt="">
+	<h2>Math, Ifs/If-elses, while/for loops</h2>
+	<p>Exactly like Java</p>
+	<h2>Getting a DOM (Document Object Model) element</h2>
+	<p>These all get an element by certain indicators</p>
+	<pre>
 <code>document.getElementById()</code>
 <code>document.getElementsByTagName()</code>
 <code>document.getElementsByClassName()</code>
 </pre>
-<p>You can also get an element by CSS selector</p>
-<pre>
+	<p>You can also get an element by CSS selector</p>
+	<pre>
 <code>document.querySelector()</code>
 <code>document.querySelectorAll()</code>
 </pre>
-<h2>Display methods</h2>
-<h3>Changing an element</h3>
-<pre>
+	<h2>Display methods</h2>
+	<h3>Changing an element</h3>
+	<pre>
 <code>document.getElementById("demo").innerHTML = 5 + 5;</code>
 </pre>
-<p id="demo"></p>
-<script src="/Volumes/Macintosh HD 2/ammarkhan/Documents/GitHub/Beginner-HTML/script.js"></script>
-<h3>Changing output</h3>
-<pre>
+	<p id="demo">40</p>
+	<script>document.getElementById("demo").innerHTML = 5 + 5</script>
+	<script src="/Volumes/Macintosh HD 2/ammarkhan/Documents/GitHub/Beginner-HTML/script.js"></script>
+	<h3>Changing output</h3>
+	<pre>
 <code>document.write(10+10)</code>
 </pre>
-<p>
-<strong>Note:</strong>
-Should only be used for testing. Using document.write() after the page has loaded (such as a button) will delete all HTML on the page
-</p>
-<script>
-document.write(10+10)
-</script>
-<h3>Alerting</h3>
-<pre>
+	<p>
+		<strong>Note:</strong> Should only be used for testing. Using
+		document.write() after the page has loaded (such as a button) will
+		delete all HTML on the page
+	</p>
+	<script>
+		document.write(10 + 10)
+	</script>
+	<h3>Alerting</h3>
+	<pre>
 <code>window.alert(10 * 10)</code>
 </pre>
-<script>
-window.alert("Alerting example: " + 10 * 10)
-</script>
-<h3>Writing into browser</h3>
-<p>
-<strong>Note:</strong>
-Look at console to see result 
-</p>
-<pre>
+	<script>
+		window.alert("Alerting example: " + 10 * 10)
+	</script>
+	<h3>Writing into browser</h3>
+	<p>
+		<strong>Note:</strong> Look at console to see result
+	</p>
+	<pre>
 <code>console.log()</code>
 </pre>
-<script>
-console.log(9*2);
-</script>
+	<script>
+		console.log(9 * 2);
+	</script>
 </body>
 </html>
